@@ -1,15 +1,25 @@
 1. ***What will happen at line 12 and why? If the code causes an error, explain why.***
+  
+    Line 12 would print - 3
 
-lab4-part1b-q2.png 
-^^^ What will happen at line 13 and why? If the code causes an error, explain why. ^^^
+    This is because var uses function scope, which means that once it is defined, it can be used anywhere inside a function. Because i was defined as a var in the for loop, it can then be refrenced anywhere in the function. There are three values in the list, so i is incremented till 2. The loop completes when i = 3 and so 3 is printed out. 
+   
+2. ***What will happen at line 13 and why? If the code causes an error, explain why.***
 
+   Line 13 would print - 150
 
-lab4-part1b-q3.png 
-^^^ What will happen at line 14 and why? If the code causes an error, explain why. ^^^
+    This is because var uses function scope, which means that once it is defined, it can be used anywhere inside a function. Because discountedPrice was defined as a var inside the for loop, it can then be refrenced anywhere in the function. The value assigned to discountedPrice was 300*0.5 = 150. 
 
+3. ***What will happen at line 14 and why? If the code causes an error, explain why.***
 
-lab4-part1b-q4.png 
-^^^ What will this function return? Give a brief explanation why. If the code causes an error, explain why. ^^^
+   Line 14 would print - 150
+
+    This is because var uses function scope, which means that once it is defined, it can be used anywhere inside a function. Because finalPrice was defined as a var inside the for loop, it can then be refrenced anywhere in the function. The value assigned to finalPrice was (150*100)/100 = 150. 
+
+4. ***What will this function return? Give a brief explanation why. If the code causes an error, explain why.***
+
+The function would rerurn a list of calculated discounted values because that is what was calculted using the prices list. All the values in discounted are based on the prices list and the input discount given. 
+discounted would have the value '[50, 100, 150]' in the case when the function is called using discountPrices([100,200,300], 0.5), which is what is returned.
 
 
 lab4-part1b-q5.png 
