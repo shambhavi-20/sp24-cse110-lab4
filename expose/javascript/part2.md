@@ -51,10 +51,15 @@
 
     Line 12 would print - 3
 
-    
+    length is defined to is a const value inside the function and it is never updated. So, when it is refernced in the same block it was declared in, the length of prices list was printed, i.e. 3.
 
-lab4-part1b-q11.png 
-^^^ What will this function return? Give a brief explanation. If the code causes an error, explain why. ^^^
+
+11. ****What will this function return? Give a brief explanation. If the code causes an error, explain why.***
+
+   The function would rerturn a list of calculated discounted values because that is what was calculted using the prices list. All the values in discounted are based on the prices list and the input discount given. Because the elements inside discounted are being modified and the discounted list is not being reassigned, we do not get an error. 
+   
+    discounted would have the value '[50, 100, 150]' in the case when the function is called using discountPrices([100,200,300], 0.5), which is what is returned.    
+    
 12. ***Given the above Object, write the notation for:  (These should be in your part2.md)***
     
     a. Accessing the value of the name property in the student object: student.name
