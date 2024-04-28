@@ -34,4 +34,4 @@ Navigate to the Initiator tab now and answer the last question
 
 9. Which function inside the initiating file made the request?
 
-    The function inside the initiating file that made the request is **fetchData @ expose.js:4**
+    The function inside the initiating file that made the request is **fetchData** and it calls is using the command fetchData @ expose.js:4.
