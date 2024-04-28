@@ -107,8 +107,14 @@
 
     "==" compares the values of two variables after doing the type conversions internally if required. "===" compares the values of two variables without doing type conversions, i.e it is a strict equality checker.
 
+16. In JS file part2-question16.js
+    
 17. ***If the function above is called with the following parameters modifyArray([1,2,3], doSomething), what will be the result? Briefly walk through how you arrived at that result. (This should be in your part2.md). Here we are passing in a function as a parameter, however we can also return a function from another function just as easily, you're encouraged to play around with callbacks as they are used heavily in frontend JS development.***
 
+    The modifyArray returns an array with values double to the original array when the function is called. The array returned has the value: [ 2, 4, 6 ].
+
+   
     modifyArray([1,2,3], doSomething) calls the modufyArray function. It defines a new array. After that, the for loop running till the input array's length. On each iteration, doSomething is called and the returned value is pushed into the new array. doSomething is called using the function parameter and value passed to doSomething is the value from the given array. After that, the calculated value is pushed into the new array and new array is returned. 
 
-    
+
+18. In JS file part2-question18.js
