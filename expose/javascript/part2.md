@@ -14,37 +14,44 @@
 
    Line 14 would print - 150
 
-    This is because var uses function scope, which means that once it is defined, it can be used anywhere inside a function. Because finalPrice was defined as a var inside the for loop, it can then be refrenced anywhere in the function. The value assigned to finalPrice was (150*100)/100 = 150. 
+    This is because var uses function scope, which means that once it is defined, it can be used anywhere inside a function. Because finalPrice was defined as a var inside the function, it can then be refrenced anywhere in the function. The value last assigned to finalPrice was (150*100)/100 = 150, which is what is printed out. 
 
 4. ***What will this function return? Give a brief explanation why. If the code causes an error, explain why.***
 
-The function would rerurn a list of calculated discounted values because that is what was calculted using the prices list. All the values in discounted are based on the prices list and the input discount given. 
-discounted would have the value '[50, 100, 150]' in the case when the function is called using discountPrices([100,200,300], 0.5), which is what is returned.
+   The function would return a list of calculated discounted values because that is what was calculted using the prices list. All the values in discounted are based on the prices list and the input discount given.
+   
+    discounted would have the value '[50, 100, 150]' in the case when the function is called using discountPrices([100,200,300], 0.5), which is what is returned.
+
+5. ***What will happen at line 12 and why? If the code causes an error, explain why.***
+  
+    Line 12 would give an error, specifically a "ReferenceError". This is because i was declared and defined inside the for loop block so we cannot use it outside that block (i was defined using let). Although it seems like i was defnied outside the for loop, beacuse it is a special case i can only be used within the fior loop.  In line 12, i is being referenced, which was not declared in its block but in the for loop block. So, we get an error. 
+   
+6. ***What will happen at line 13 and why? If the code causes an error, explain why.***
+
+    Line 13 would give an error, specifically a "ReferenceError". This is because discountedPrice was declared and defined inside the for loop block so we cannot use it outside that block. In line 13, discountedPrice is being referenced, which was not declared in its block but in the for loop block. So, we get an error.  
+
+7. ***What will happen at line 14 and why? If the code causes an error, explain why.***
+
+   Line 14 would print - 150
+
+    This is because finalPrice is being referenced in the block it was defined in. Because finalPrice was defined inside the function if can be referenced and updated in the for loop block. Thus, the value last assigned to finalPrice inside the for loop was (150*100)/100 = 150, which is what is printed out. 
+
+8. ***What will this function return? Give a brief explanation why. If the code causes an error, explain why.***
+
+   The function would rerturn a list of calculated discounted values because that is what was calculted using the prices list. All the values in discounted are based on the prices list and the input discount given. Because discounte dwas defined inside the function if can be referenced and updated in the for loop block.
+   
+    discounted would have the value '[50, 100, 150]' in the case when the function is called using discountPrices([100,200,300], 0.5), which is what is returned.
+
+9. ***What will happen at line 11 and why? If the code causes an error, explain why.***
+
+    Line 11 would give an error, specifically a "ReferenceError". This is because i was declared and defined inside the for loop block so we cannot use it outside that block (i was defined using let). In line 11, i is being referenced, which was not declared in its block but in the for loop block. So, we get an error. 
 
 
-lab4-part1b-q5.png 
-^^^ What will happen at line 12 and why?  If the code causes an error, explain why. ^^^ (assume this function is being called like the others: discountPrices([100, 200, 300], 0.5)).
+10. ***What will happen at line 12 and why? If the code causes an error, explain why.***
 
+    Line 12 would print - 3
 
-lab4-part1b-q6.png 
-^^^ What will happen at line 13 and why? If the code causes an error, explain why. ^^^
-
-
-lab4-part1b-q7.png 
-^^^ What will happen at line 14 and why? If the code causes an error, explain why. ^^^
- 
-
-lab4-part1b-q8.png 
-^^^ What will this function return? Give a brief explanation. If the code causes an error, explain why. ^^^
-
-
-lab4-part1b-q9.png 
-^^^ What will happen at line 11 and why? If the code causes an error, explain why. ^^^
-
-
-lab4-part1b-q10.png 
-^^^ What will happen at line 12 and why? If the code causes an error, explain why. ^^^
-
+    
 
 lab4-part1b-q11.png 
 ^^^ What will this function return? Give a brief explanation. If the code causes an error, explain why. ^^^
