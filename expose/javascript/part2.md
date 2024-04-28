@@ -118,3 +118,14 @@
 
 
 18. In JS file part2-question18.js
+
+19. ***What is the output of the above code?***
+
+    Output is:
+    
+               1
+               4
+               3
+               2
+   
+   As setTimeout() is asynchoronous, which means that the timer would not pause execution of other functions. In the question there are two setTimeouts, the second one of printed/executed right after the current running synchronous code finishes running because the delay was 0 seconds. SO, 3 is printed right after 4 is printed. However, the first one is added to the queue after a 1000 milliseconds which cause it to be printed out 1 second later than the other three prints.  
