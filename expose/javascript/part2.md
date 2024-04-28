@@ -89,3 +89,20 @@
     '3' + undefined: '3undefined' since undefined is converted into a string 'undefined' and is contenated to '3'. 
    
     '3' - undefined: NaN because of the - sign undefined is NaN and 3 connot be converted into an integer. So, we get NaN as the final answer.
+
+14. ***Comparison***
+    '2' > 1: true since integers map to their exact string representation and then just compared as integers.
+    
+    '2' < '12': false as the first character of '12' is less that '2' usinf string comparision.
+    
+    2 == '2': true since integers map to their exact string representation and then just compared as integers.
+    
+    2 === '2': false because the types of 2 and '2' are different.
+    
+    true == 2: false since true turns into 1 and 1 is not equal to 2.
+    
+    true === Boolean(2): true since a 2 number would be converted to true using Boolean() and the values would be compared after that.
+
+15. Explain the difference between the == and === operators.
+
+    == compares the values of two variables after doing the type conversions internally if required. === compares the values of two variables without doing type conversions, i.e it is a strict equality checker.
