@@ -103,6 +103,6 @@
     
     true === Boolean(2): true since a 2 number would be converted to true using Boolean() and the values would be compared after that.
 
-15. Explain the difference between the == and === operators.
+15. ***Explain the difference between the == and === operators.***
 
     == compares the values of two variables after doing the type conversions internally if required. === compares the values of two variables without doing type conversions, i.e it is a strict equality checker.
