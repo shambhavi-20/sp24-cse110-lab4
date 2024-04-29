@@ -20,7 +20,7 @@
 
    The function would return a list of calculated discounted values because that is what was calculated using the prices list. All the values in discounted are based on the prices list and the input discount given.
    
-    discounted would have the value '[50, 100, 150]' in the case when the function is called using discountPrices([100,200,300], 0.5), which is what is returned.
+    The function would return discounted would have the value '[50, 100, 150]' in the case when the function is called using discountPrices([100,200,300], 0.5), which is what is returned.
 
 5. ***What will happen at line 12 and why? If the code causes an error, explain why.***
   
@@ -40,7 +40,7 @@
 
    The function would return a list of calculated discounted values because that is what was calculated using the prices list. All the values in discounted are based on the prices list and the input discount given. Because discounted was defined inside the function, it can be referenced and updated in the for loop block.
    
-    discounted would have the value '[50, 100, 150]' in the case when the function is called using discountPrices([100,200,300], 0.5), which is what is returned.
+    The function would return discounted would have the value '[50, 100, 150]' in the case when the function is called using discountPrices([100,200,300], 0.5), which is what is returned.
 
 9. ***What will happen at line 11 and why? If the code causes an error, explain why.***
 
@@ -58,7 +58,7 @@
 
    The function would return a list of calculated discounted values because that is what was calculated using the prices list. All the values in discounted are based on the prices list and the input discount given. Because the elements inside discounted are being modified and the discounted list is not being reassigned, we do not get an error. 
    
-    discounted would have the value '[50, 100, 150]' in the case when the function is called using discountPrices([100,200,300], 0.5), which is what is returned.    
+    The function would return discounted would have the value '[50, 100, 150]' in the case when the function is called using discountPrices([100,200,300], 0.5), which is what is returned.    
     
 12. ***Given the above Object, write the notation for:  (These should be in your part2.md)***
     
@@ -105,7 +105,7 @@
 
 15. ***Explain the difference between the == and === operators.***
 
-    "==" compares the values of two variables after doing the type conversions internally if required. "===" compares the values of two variables without doing type conversions, i.e it is a strict equality checker.
+    "==" and "===" are both used to check equality. However, "==" compares the values of two variables after doing the type conversions internally if required. Whereas, "===" compares the values of two variables without doing type conversions, i.e it is a strict equality checker.
 
 16. In JS file part2-question16.js
     
@@ -128,4 +128,4 @@
                3
                2
    
-   As setTimeout() is asynchronous, which means that the timer would not pause execution of other functions. In the question, there are two setTimeouts, the second one of printed/executed right after the current synchronous code finishes running because the delay was 0 seconds. So, 3 is printed right after 4 is printed. However, the first one is added to the queue after 1000 milliseconds which causes it to be printed out 1 second later than the other three prints.  
+   As setTimeout() is asynchronous, which means that the timer would not pause execution of other functions. console.log(1) is run immediately after which 1 is printed on the console. There are two setTimeouts. The first one is added to the event queue and is printed after 1000 milliseconds which causes 2 to be printed out 1 second later than the other three prints. This does not stop the program from moving forward. The second one of printed/executed right after the current synchronous code finishes running. It is printed after the current synchronous code finishes, even though there is a delay of 0 seconds. So, 3 is printed right after 4 is printed. 
